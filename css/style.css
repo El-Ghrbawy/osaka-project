@@ -1,0 +1,226 @@
+/* ========================== global ===================================== */
+
+:root {
+
+    --main-color: #ff206e;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+
+}
+
+img {
+    width: 100%;
+}
+
+.title {
+
+    p {
+        font-size: 6rem;
+        color: rgba(220, 220, 220, 0.358);
+        letter-spacing: 15px;
+    }
+}
+
+/* ========================== navbar ===================================== */
+
+
+#navbar .navbar-nav .nav-link.active {
+    color: var(--main-color);
+}
+
+
+#navbar .nav-link {
+    color: white;
+
+    transition: all 600ms;
+
+    &:hover {
+        color: var(--main-color);
+    }
+}
+
+/* ========================== home ===================================== */
+
+#Home {
+    background-image: url(../imgs/bggg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: solid 1px rgba(220, 220, 220, 0.342);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    transition: all 600ms;
+
+    &:hover {
+
+        color: var(--main-color);
+        border: solid 1px rgb(220, 220, 220);
+    }
+
+
+
+}
+
+/* ========================== about ===================================== */
+
+#About {
+
+    background-image: url(../imgs/light_dot.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================== Services ===================================== */
+
+
+
+
+
+.service-item h3::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    transition: all 600ms;
+}
+
+
+
+
+.service-item:hover h3::after {
+    width: 100px;
+}
+
+
+
+
+
+/* ========================== testo ===================================== */
+
+
+.test-item img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.carousel-indicators [data-bs-target] {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-indent: 0;
+
+
+}
+
+
+
+
+/* ========================== Portfolio ===================================== */
+
+#Portfolio {}
+
+
+.portfolio-item img {
+    transition: all 1s;
+}
+
+.portfolio-layer {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    left: 15px;
+    bottom: 15px;
+    transform: translateY(-110%);
+    transition: all 1s;
+
+    p {
+        opacity: 0;
+        transition: all 2s;
+    }
+}
+
+.portfolio-item:hover {
+
+    .portfolio-layer {
+        transform: translateY(0);
+    }
+
+    p {
+        opacity: 1;
+    }
+
+
+    img {
+        filter: blur(3px);
+    }
+
+}
+
+
+.btn-close {
+    --bs-btn-close-bg: none
+}
+
+
+#Portfolio .nav-pills .nav-link.active {
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 30px;
+}
+
+
+#Portfolio .nav-link {
+    color: black;
+    transition: color 1s;
+}
+
+@media screen and (max-width:600px) {
+
+    .title {
+
+        p {
+            font-size: 60px;
+
+        }
+    }
+
+}
