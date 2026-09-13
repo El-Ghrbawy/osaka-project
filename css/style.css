@@ -218,7 +218,8 @@ img {
     .title {
 
         p {
-            font-size: 60px;
+            font-size: 55px;
+            letter-spacing: 4px;
 
         }
     }
